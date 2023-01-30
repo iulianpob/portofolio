@@ -1,0 +1,13 @@
+.container {
+    height: 100%;
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 6rem;
+        gap: 2rem;
+        
+    }
+}

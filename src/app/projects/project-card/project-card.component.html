@@ -1,0 +1,16 @@
+<div class="flip-card" *ngFor="let project of projects" >
+    <div class="flip-card-inner">
+      <div class="flip-card-back">
+        <a href="{{project.url}}" target="_blank" >
+          <img class="project-img" src={{project.imagePath}} alt="{{project.name}}">
+        </a>
+        
+      </div>
+      <div class="flip-card-front">
+        <h1>{{project.name}}</h1>
+        <p>
+          {{project.description}}
+        </p>
+      </div>
+    </div>
+  </div>
