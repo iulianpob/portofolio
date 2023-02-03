@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
+import { ToggleModeService } from '../shared/toggle-mode.service';
 
 
 @Component({
@@ -6,10 +7,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
   templateUrl: './alert-contact.component.html',
   styleUrls: ['./alert-contact.component.scss']
 })
-export class AlertContactComponent {
+export class AlertContactComponent implements OnInit {
 @Output() closeModalEvent = new EventEmitter();
+lightMode = false;
 
-  constructor() {}
+  constructor(private toggleModeService: ToggleModeService) {}
+
+  ngOnInit() {
+    this.toggleModeService.lightMode$.subscribe(lightMode_ => this.lightMode = lightMode_)
+  }
 
   onCloseModal() {
     this.closeModalEvent.emit()

@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ToggleModeService } from '../shared/toggle-mode.service';
 
 
 @Component({
@@ -6,14 +7,20 @@ import { Component, EventEmitter, Output } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 @Output() showModalEvent = new EventEmitter();
+lightMode = false;
 
-  constructor() {}
+  constructor(private toggleModeService:ToggleModeService) {}
+
+  ngOnInit() {
+    this.toggleModeService.lightMode$.subscribe(lightMode_ => this.lightMode = lightMode_)
+  }
 
   onShowModal() {
     this.showModalEvent.emit()
   }
+
 
 
 

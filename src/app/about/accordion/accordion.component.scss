@@ -1,0 +1,40 @@
+.custom-tabview {
+    display: block;
+    padding: 4rem;
+    height: 80%;
+    // color: #feffffd0;
+  }
+  
+  .p-tabview-nav{
+    font-size: 2rem;
+    justify-content: center;
+    gap: 2rem;
+
+  .p-tabview-title {
+    padding: 1rem;
+
+  &:hover {
+    color: #645EC8;
+  }
+}
+  .p-highlight {
+    border-bottom:2px solid #645EC8;
+  }
+
+  }
+
+
+
+  .custom-tabpanel {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: 1.6px;
+    line-height: 2.2;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .goals-list {
+    text-align: left;
+    padding: 0 2rem 0 6rem;
+  }

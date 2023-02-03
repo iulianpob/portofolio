@@ -9,7 +9,7 @@ import { Project } from '../shared/project.model';
 export class ProjectsComponent {
 public projects: Project[] = [
   new Project('Omnifood', "Test description", "../assets/omnifood.png", 'https://iulianpobirci.netlify.app/'),
-  new Project('Omnifood', "Test description", "assets/omnifood.png", 'https://iulianpobirci.netlify.app/'),
+  new Project('First to 100', "Test description", "assets/first100.png", 'https://first100-iulianpobirci.netlify.app/'),
   new Project('Omnifood', "Test description", "assets/omnifood.png", 'https://iulianpobirci.netlify.app/'),
   new Project('Omnifood', "Test description", "assets/omnifood.png", 'https://iulianpobirci.netlify.app/'),
   new Project('Bankist', "Test description2", 'assets/bankist.png', 'https://bank-iulianpobirci.netlify.app/')

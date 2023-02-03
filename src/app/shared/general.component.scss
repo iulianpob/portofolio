@@ -1,0 +1,125 @@
+// Dark Theme:
+$primaryDark-backgroundColor: #2C2C38;
+$secondaryDark-backgroundColor: #21212D;
+$primaryLinks-Color: #feffffd0;
+$primaryFontColor: #FEFFFF;
+$borderPrimaryColor: #F8F7FB;
+$primaryCtaButton-Color: #645EC8;
+$primaryCtaButton-hoverColor:#4c44df;
+
+
+// Light Theme:
+$primaryLight-backgroundColor: #f7f3f3;
+$primaryLight-fontColor: #21212D;
+$secondaryLight-backgroundColor : #f5f1f1;
+
+
+@mixin darkThemePrimary {
+    background-color: $primaryDark-backgroundColor;
+    color: $primaryFontColor;
+}
+
+@mixin darkThemeSecondary {
+    background-color: $secondaryDark-backgroundColor;
+    color: $primaryFontColor;
+}
+
+@mixin lightThemeSecondary {
+    background-color: $primaryLight-backgroundColor;
+    color: $primaryLight-fontColor !important;
+}
+
+@mixin lightThemePrimary {
+    background-color: $secondaryLight-backgroundColor;
+    color: $primaryLight-fontColor;
+}
+
+@mixin fullScreenGrid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
+@mixin borderDarkTheme($property) {
+   #{$property}: 2px solid $primaryCtaButton-Color;
+}
+
+@mixin borderLightTheme($property) {
+    #{$property}: 2px solid #f6f2f2;
+}
+
+@mixin ctaBtn {
+    margin-right: 2rem;
+    color: #FEFFFF;
+    background-color:#645EC8;
+    padding: 1.4rem 2rem;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+@mixin lightTheme {
+    @include lightThemePrimary;
+    .item-link:link, 
+    .item-link:visited {
+        color:$primaryLight-fontColor;
+    }
+
+    .pi {
+        color: $primaryLight-fontColor;
+     
+     }
+
+     
+.aside__hide--btn {
+    background-color: $primaryLight-backgroundColor;
+    color: $primaryLight-fontColor;
+}
+
+.aside__contol--btn {
+    background-color: $secondaryLight-backgroundColor;
+}
+.header__navi--btn {
+    color: $primaryLight-fontColor;
+}
+}
+
+@mixin lightThemeContent {
+    @include lightThemeSecondary;
+    .content {
+        color: $primaryLight-fontColor;
+    }
+    
+}
+
+@mixin darkTheme {
+    @include darkThemePrimary;
+
+    .item-link:link, 
+    .item-link:visited {
+        color: $primaryLinks-Color;
+    }
+
+    .pi {
+        color: $primaryLinks-Color;
+     
+     }
+
+     
+.aside__hide--btn {
+    background-color: $primaryDark-backgroundColor;
+    color: $primaryLinks-Color;
+}
+
+.aside__contol--btn {
+    background-color: $secondaryDark-backgroundColor;
+}
+.header__navi--btn {
+    color: $primaryLinks-Color;
+}
+}
+
+@mixin darkThemeContent {
+    @include darkThemeSecondary;
+    color: #feffffd0;
+}
+

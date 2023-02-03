@@ -1,3 +1,5 @@
+@import '../shared/general.component.scss';
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -13,6 +15,7 @@
             height: 60px;
             width: 60px;
             border-radius: 50%;
+            object-fit: cover;
             
         }
 
@@ -32,22 +35,26 @@
 
             .header__navi--btn {
                 text-decoration: none;
-                color: #FEFFFF;
+                // color: $primaryLinks-Color;
             }
 
             .cta--btn {
-                margin-right: 2rem;
-                color: #FEFFFF;
-                background-color:#645EC8;
-                padding: 1.4rem 2rem;
-                border-radius: 1000px;
+                @include ctaBtn;
 
                 &:hover,
                 &:active {
-                    background-color: #4c44df;
+                    background-color: $primaryCtaButton-hoverColor;
                 }
             }
         }
         
     }
 }
+.darkMode {
+    @include darkTheme;
+ }
+ 
+ .lightMode {
+   @include lightTheme;
+ }
+ 

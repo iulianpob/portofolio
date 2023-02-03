@@ -1,12 +1,12 @@
-<div class="container">
-    <div class="header">
+<div class="container" [ngStyle]="{'filter': !showModal ? 'blur(0)' : 'blur(5px)' }"  >
+    <div class="header" >
         <app-header (showModalEvent)="onShowModal()"></app-header>
     </div>
     <div class="aside">
         <app-aside></app-aside>
     </div>
-    <div class="content">
+    <div class="content darkMode" [ngClass]="{'lightMode': lightMode === true}">
         <router-outlet></router-outlet>
-        <app-alert-contact *ngIf="showModal" (closeModalEvent)="onCloseModal()"></app-alert-contact>
     </div>
 </div>
+<app-alert-contact *ngIf="showModal" (closeModalEvent)="onCloseModal()"></app-alert-contact>

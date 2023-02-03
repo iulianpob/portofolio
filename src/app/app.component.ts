@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ToggleModeService } from './shared/toggle-mode.service';
+
 
 
 @Component({
@@ -8,8 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   showModal = false
+  lightMode = false
   
  
+  constructor(private toggleModeService:ToggleModeService) {}
+
+  ngOnInit() {
+    this.toggleModeService.lightMode$.subscribe(lightMode_ => this.lightMode = lightMode_)
+  }
+
+
 onShowModal() {
 this.showModal = true;
 }
@@ -18,11 +28,6 @@ onCloseModal() {
   this.showModal = false;
 }
 
-  constructor() {}
-
-  ngOnInit(): void {
-
-  }
 
  
 

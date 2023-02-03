@@ -1,0 +1,46 @@
+<!-- <div class="content">
+    <p-tabView>
+        <p-tabPanel header="Header 1">
+            Content 1
+        </p-tabPanel>
+    <p-tabPanel header="Header 2">
+        Content 2
+    </p-tabPanel>
+    <p-tabPanel header="Header 3">
+        Content 3
+    </p-tabPanel>
+</p-tabView>
+</div> -->
+
+<p-tabView class="custom-tabview">
+        <p-tabPanel header="Personal Info" class="custom-tabpanel" activeIndex="1" >
+            <p>Motivated 26-year-old seeking to deepen Front-End Development skills. Charismatic and organized individual with a strong commitment to meeting deadlines. Eager to take on new challenges and further develop my skills in the field. Passionate about creating user-friendly and visually appealing websites, continuously learning and staying up-to-date with the latest industry advancements. Ready to bring my positive attitude and strong work ethic to a dynamic and growing team.</p>
+        </p-tabPanel>
+        <p-tabPanel header="Work Experience" class="custom-tabpanel" activeIndex="2">
+            <p-timeline [value]="events">
+                <ng-template pTemplate="content" let-event>
+                    <small class="p-text-secondary">{{event.date}}</small>
+                </ng-template>
+                <ng-template pTemplate="opposite" let-event>
+                    {{event.status}}
+                </ng-template>
+            </p-timeline>
+            
+        </p-tabPanel>
+        <p-tabPanel header="Education" class="custom-tabpanel">
+            <ul class="goals-list">
+                <li>Completed front-end development courses with a focus on Angular, HTML, CSS, SCSS, and JavaScript.</li>
+                <li>Self-taught and acquired technical skills through online resources and personal projects.</li>
+                <li>Show a strong interest in MEAN stack and plan to learn Node.js in the future.</li>
+            </ul>
+        </p-tabPanel>
+        <p-tabPanel header="Goals" class="custom-tabpanel">
+            <ul class="goals-list">
+                <li>Expand my knowledge and skills in Angular</li>
+                <li>Work on challenging projects that require using Angular to deliver high-quality and responsive web applications.</li>
+                <li>Contribute to the development of scalable and efficient Angular solutions for various business needs.</li>
+                <li>Collaborate with cross-functional teams and learn from senior developers.</li>
+            </ul>
+        </p-tabPanel>
+    </p-tabView>
+  

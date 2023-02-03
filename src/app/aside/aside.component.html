@@ -1,12 +1,12 @@
-<div class="aside">
+<div class="aside darkMode" [ngClass]="{'lightMode': lightMode === true}">
     <div class="menu">
         <h2 class="menu__list--header">Menu</h2>
-        <div class="menu__list--items">
-            <ul class="list-group">
-                <li class="list__group--item"><a href="#" class="item-link">Home</a></li>
-                <li class="list__group--item"><a href="#" class="item-link">About</a></li>
+        <div class="menu__list--items" >
+            <ul class="list-group" >
+                <li class="list__group--item"><a routerLink="/" class="item-link">Home</a></li>
+                <li class="list__group--item"><a routerLink="about" class="item-link">About</a></li>
                 <li class="list__group--item"><a routerLink="projects" class="item-link">Projects</a></li>
-                <li class="list__group--item"><a href="home" class="item-link">Contact</a></li>
+                <li class="list__group--item"><a routerLink="contact" class="item-link">Contact</a></li>
             </ul>
         </div>
     </div>
