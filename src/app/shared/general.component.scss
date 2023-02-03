@@ -40,6 +40,12 @@ $secondaryLight-backgroundColor : #f5f1f1;
     grid-template-rows: 100px 1fr;
 }
 
+@mixin hideMenuGrid {
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    grid-template-rows: 100px 1fr;
+}
+
 @mixin borderDarkTheme($property) {
    #{$property}: 2px solid $primaryCtaButton-Color;
 }
@@ -76,7 +82,8 @@ $secondaryLight-backgroundColor : #f5f1f1;
 }
 
 .aside__contol--btn {
-    background-color: $secondaryLight-backgroundColor;
+    background-color: $primaryLight-backgroundColor;
+    border: 2px solid $primaryCtaButton-Color;
 }
 .header__navi--btn {
     color: $primaryLight-fontColor;

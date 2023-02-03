@@ -1,11 +1,17 @@
-<div class="container" [ngStyle]="{'filter': !showModal ? 'blur(0)' : 'blur(5px)' }"  >
+<div class="container" [ngStyle]="{'filter': !showModal ? 'blur(0)' : 'blur(5px)' }"  [ngClass]="{'hideMenu': !showMenu, 'showMenu': showMenu}">
     <div class="header" >
         <app-header (showModalEvent)="onShowModal()"></app-header>
     </div>
     <div class="aside">
-        <app-aside></app-aside>
+        <app-aside (hideAside)="onToggleAside()"></app-aside>
     </div>
     <div class="content darkMode" [ngClass]="{'lightMode': lightMode === true}">
+          <button class="chevron" (click)="onToggleAside()" *ngIf="showMenu">
+            <i class="pi pi-chevron-left"></i>
+        </button>
+        <button class="chevron" (click)="onToggleAside()" *ngIf="!showMenu">
+            <i class="pi pi-chevron-right"></i>
+        </button>
         <router-outlet></router-outlet>
     </div>
 </div>

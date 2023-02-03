@@ -1,0 +1,57 @@
+@import '/src/app/shared/general.component.scss';
+
+
+.contact-info {
+    height: 550px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    border: 2px solid blue;
+
+    .contact-header {
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .hero-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .contact {
+            margin-bottom: 4rem;
+        }
+
+
+        .el-name {
+            font-size: 2rem;
+            
+        }
+
+        .el-link a {
+            text-decoration: none;
+        }
+
+        .contact-el {
+            font-size: 1.4rem;
+
+         
+        }
+        .pi {
+            margin-right: 1rem;
+        }
+    }
+
+    
+    .btn-modal {
+        border: none;           
+        padding: 1rem 2rem;
+        margin-left: 1rem;
+        cursor: pointer;
+        border-radius: 1000px;           
+
+    }
+}

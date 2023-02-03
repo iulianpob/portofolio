@@ -71,6 +71,32 @@
     margin-left: 1rem;
 }
 
+// .pi-chevron-left, .pi-chevron-right {
+//     font-size: 4rem; 
+// }
+
+// .chevron {
+//     border-radius: 50%;
+//     background-color: $primaryCtaButton-Color;
+//     padding: 1rem;
+//     border: none;
+//     position: absolute;
+//     top: 45%;
+//     right: 0;
+//     transform: translate(50%,-50%);
+//     display: inline-block;
+//     z-index: 2;
+    
+    
+//     &:hover {
+//         background-color: $primaryCtaButton-hoverColor;
+//     }
+// }
+
+.hideAside {
+    width: 50px;
+    overflow: hidden;
+}
 
 .darkMode {
    @include darkTheme;
@@ -81,3 +107,35 @@
   @include lightTheme;
   @include borderLightTheme(border-right);
 }
+
+@media only screen and (max-width:720px) {
+    .menu {
+        display: none;
+    }
+    .aside-footer {
+        display: none;
+    }
+    .btn-hambuger {
+        display: block;
+    }
+
+    
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+ .btn-hambuger{
+    display: none;
+ }
+
+ .btn-close {
+    display: none;
+ }
+
+  .pi {
+    font-size: 2rem;
+ }
+

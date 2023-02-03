@@ -1,7 +1,9 @@
 
 @import '../shared/general.component.scss';
 
-
+.pi {
+    font-size: 2rem;
+}
 
 .content {
     height: 100%;
@@ -31,7 +33,7 @@
             top: 5%;
             right: -7%;
             transform: translate(-50%, -50%);
-            font-size: 2rem;
+
             cursor: pointer;
            
         }
@@ -144,6 +146,10 @@
             .pi {
                 margin-right: 1rem;
             }
+
+            // .pi-times {
+            //     font-size: 4rem;
+            // }
         }
 
         

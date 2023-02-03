@@ -1,13 +1,13 @@
 import { OnInit, ViewEncapsulation } from '@angular/core';
 import { Component } from '@angular/core';
-import { PrimeIcons } from 'primeng/api';
+
 
 
 @Component({
   selector: 'app-accordion',
   templateUrl: './accordion.component.html',
   styleUrls: ['./accordion.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class AccordionComponent implements OnInit {
 events!: any[];

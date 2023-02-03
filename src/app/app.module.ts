@@ -15,12 +15,14 @@ import { AccordionComponent } from './about/accordion/accordion.component';
 import {TimelineModule} from 'primeng/timeline';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { PopupComponent } from './popup/popup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AsideComponent, HomeComponent, AboutComponent, AlertContactComponent, ProjectsComponent, ProjectCardComponent, AccordionComponent, FooterComponent, ContactComponent],
-  imports: [BrowserModule, TabViewModule,DialogModule, AppRoutingModule, TimelineModule],
+  declarations: [AppComponent, HeaderComponent, AsideComponent, HomeComponent, AboutComponent, AlertContactComponent, ProjectsComponent, ProjectCardComponent, AccordionComponent, FooterComponent, ContactComponent, PopupComponent],
+  imports: [BrowserModule, TabViewModule,DialogModule, AppRoutingModule, TimelineModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 

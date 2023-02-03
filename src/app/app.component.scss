@@ -2,16 +2,13 @@
 
 
 .container {
-    //  height: 95vh;
     height: 100vh;
-    @include fullScreenGrid;
 }
 
 
 
 .header {
     @include darkThemePrimary;
-    // @include borderDarkTheme (border-bottom);
     grid-column: 1 / span 3;
     height: 100px;
      
@@ -32,3 +29,60 @@
     @include borderLightTheme(border-top);
 }
 
+.hideMenu {
+    @include hideMenuGrid;
+}
+
+.showMenu {
+    @include fullScreenGrid;
+}
+
+.content {
+    position: relative;
+}
+
+.pi-chevron-left, .pi-chevron-right {
+    font-size: 4rem; 
+    color: $primaryLinks-Color;
+}
+
+.chevron {
+    border-radius: 50%;
+    background-color: $primaryCtaButton-Color;
+    padding: 1rem;
+    border: none;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    // z-index: 2;
+    
+    
+    &:hover {
+        background-color: $primaryCtaButton-hoverColor;
+    }
+}
+
+
+@media only screen and (max-width:720px) {
+    .container {
+     display: grid;
+     grid-template-columns: 50vw 50vw;
+     grid-template-rows: 20% 80%;
+        
+        .header {
+            grid-column: 1;
+        }
+        
+        .aside {
+            grid-column: 2;
+        }
+
+        .content {
+            grid-row: 2;
+            grid-column: span 2;
+        }
+
+    }
+}

@@ -11,6 +11,7 @@ import { ToggleModeService } from './shared/toggle-mode.service';
 export class AppComponent implements OnInit {
   showModal = false
   lightMode = false
+  showMenu = true;
   
  
   constructor(private toggleModeService:ToggleModeService) {}
@@ -26,6 +27,10 @@ this.showModal = true;
 
 onCloseModal() {
   this.showModal = false;
+}
+
+onToggleAside() {
+  this.showMenu = !this.showMenu
 }
 
 

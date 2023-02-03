@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    position: relative;
 
     .header__logo--box {
         display: flex;
@@ -58,3 +59,40 @@
    @include lightTheme;
  }
  
+ .p-dialog{
+    background-color: red;
+    padding: 2rem;
+    text-align: center;
+    height: 300px;
+    width: 30vw !important;
+    align-items: center;
+    gap: 3rem;
+ }
+
+ .p-dialog-title {
+    font-size: 3rem;
+ }
+
+ .p-dialog-content {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    letter-spacing: 1.6px;
+ }
+
+ .p-dialog-titlebar-icon {
+    background-color: blue;
+ }
+
+
+
+
+
+
+
+ @media only screen and (max-width:720px) {
+    .header__navi {
+        display: none;
+    }
+
+
+ }
