@@ -4,7 +4,6 @@
         <a href="{{project.url}}" target="_blank" >
           <img class="project-img" src={{project.imagePath}} alt="{{project.name}}">
         </a>
-        
       </div>
       <div class="flip-card-front">
         <h1>{{project.name}}</h1>
@@ -12,5 +11,14 @@
           {{project.description}}
         </p>
       </div>
+    </div>
+  </div>
+  <div class="projects-mobile" >
+    <div class="project-container" *ngFor="let project of projects">
+      <h2 class="project-header">{{project.name}}</h2>
+      <p class="project-description">{{project.description}}</p>
+      <a href="{{project.url}}" target="_blank" >
+        <img class="project-img--mobile" src={{project.imagePath}} alt="{{project.name}}">
+      </a>
     </div>
   </div>

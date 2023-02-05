@@ -17,11 +17,12 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { PopupComponent } from './popup/popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MobileTestimonialComponent } from './about/mobile-testimonial/mobile-testimonial.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AsideComponent, HomeComponent, AboutComponent, AlertContactComponent, ProjectsComponent, ProjectCardComponent, AccordionComponent, FooterComponent, ContactComponent, PopupComponent],
+  declarations: [AppComponent, HeaderComponent, AsideComponent, HomeComponent, AboutComponent, AlertContactComponent, ProjectsComponent, ProjectCardComponent, AccordionComponent, FooterComponent, ContactComponent, PopupComponent, MobileTestimonialComponent],
   imports: [BrowserModule, TabViewModule,DialogModule, AppRoutingModule, TimelineModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],

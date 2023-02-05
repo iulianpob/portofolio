@@ -67,22 +67,30 @@
 
 @media only screen and (max-width:720px) {
     .container {
-     display: grid;
-     grid-template-columns: 50vw 50vw;
-     grid-template-rows: 20% 80%;
-        
-        .header {
-            grid-column: 1;
-        }
-        
-        .aside {
-            grid-column: 2;
-        }
-
-        .content {
-            grid-row: 2;
-            grid-column: span 2;
-        }
-
+        display: flex;
+        flex-direction: column;
+        width: 100wv;
     }
+
+    .chevron {
+        display: none;
+    }
+
+    .header {
+        order: 1;
+    }
+
+    .content {
+        order: 2;
+        z-index: 0;
+        border-bottom: 2px solid $primaryCtaButton-Color;
+    }
+
+    .aside {
+        order: 3;
+        position: sticky;
+        bottom: 0;
+        z-index: 1;
+    }
+
 }

@@ -3,13 +3,19 @@
         <h2 class="menu__list--header">Menu</h2>
         <div class="menu__list--items" >
             <ul class="list-group" >
-                <li class="list__group--item"><a routerLink="/" class="item-link"> Home</a></li>
-                <li class="list__group--item"><a routerLink="about" class="item-link">About</a></li>
-                <li class="list__group--item"><a routerLink="projects" class="item-link">Projects</a></li>
-                <li class="list__group--item"><a routerLink="contact" class="item-link">Contact</a></li>
+                <div class="full-screen--navi">
+                    <li class="list__group--item"><a routerLink="/" class="item-link"> Home</a></li>
+                    <li class="list__group--item"><a routerLink="about" class="item-link">About</a></li>
+                    <li class="list__group--item"><a routerLink="projects" class="item-link">Projects</a></li>
+                    <li class="list__group--item"><a routerLink="contact" class="item-link">Contact</a></li>
+                </div>
+                <div class="mobile-screen--navi">
+                    <li class="list__group--item"><a routerLink="/" class="item-link--mobile"><i class="pi pi-home"></i></a></li>
+                    <li class="list__group--item"><a routerLink="about" class="item-link--mobile"><i class="pi pi-user"></i></a></li>
+                    <li class="list__group--item"><a routerLink="projects" class="item-link--mobile"><i class="pi pi-list"></i></a></li>
+                    <li class="list__group--item"><a routerLink="contact" class="item-link--mobile"><i class="pi pi-envelope"></i></a></li>
+                </div>
             </ul>
-            <button class="btn btn-hambuger"><i class="pi pi-list"></i></button>
-        <button class="btn btn-close"><i class="pi pi-times"></i></button>
         </div>
     </div>
     <div class="aside-footer">

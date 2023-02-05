@@ -108,32 +108,57 @@
   @include borderLightTheme(border-right);
 }
 
+.mobile-screen--navi {
+    display: none;
+}
+
 @media only screen and (max-width:720px) {
-    .menu {
+    .aside {
+        height: 80px;
+        margin: 1rem auto !important;
+        border-right: none;
+        padding: 1rem !important;
+    }
+    
+
+    .menu__list--header {
+        display: none;
+
+    }
+
+    .full-screen--navi {
         display: none;
     }
+
     .aside-footer {
         display: none;
     }
-    .btn-hambuger {
-        display: block;
+
+    .mobile-screen--navi {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
     }
 
-    
+    .list__group--item {
+        padding-top: 1rem !important;
+    }
+    .pi {
+        font-size: 3rem !important;
+    }
+
+    .item-link--mobile:hover,
+    .item-link--mobile:active,
+    .item-link--mobile:focus
+     {
+        .pi {
+            color: $primaryCtaButton-Color;
+        }
+    }
+
+
 }
-
-.btn {
-    background-color: transparent;
-    border: none;
-}
-
- .btn-hambuger{
-    display: none;
- }
-
- .btn-close {
-    display: none;
- }
 
   .pi {
     font-size: 2rem;

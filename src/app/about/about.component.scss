@@ -34,3 +34,23 @@
         height: 400px;
     }
 }
+
+    .about-acordeon-mobile {
+        display: none;
+    }
+
+@media only screen and (max-width:720px) {
+    .about-acordeon {
+       display: none;
+    }
+
+    .about-acordeon-mobile {
+        display: block;
+    }
+
+    h2 {
+        padding: 2rem;
+    }
+
+ 
+}

@@ -70,3 +70,45 @@
 //         height: 20rem;
 //     }
 // }
+
+@media only screen and (max-width:720px) {
+    .container {
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 4rem;
+
+        .image-box {
+            width: fit-content;
+            padding: 0 1rem;
+        }
+        
+        .author-photo {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .intro-box {
+            width: fit-content;
+        }
+
+        .intro-header {
+            font-size: 3.6rem !important;
+            padding: 2rem;
+            margin-bottom: 1rem !important;
+        }
+
+        .intro-desc {
+            font-size: 1.6rem !important;
+            padding: 1rem;
+            margin-bottom: 1rem !important;
+        }
+    }
+
+
+
+}
