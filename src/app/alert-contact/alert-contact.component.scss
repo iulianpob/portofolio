@@ -97,7 +97,14 @@
                 &:active {
                     border: none;
                 }
+            }
 
+            textarea {
+                max-width: 370px ;
+                min-width: 370px ;
+                max-height: 78px ;
+                min-height: 78px ;
+                border: none;
             }
         
         }

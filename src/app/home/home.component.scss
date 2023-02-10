@@ -43,6 +43,7 @@
             border-radius: 1000px;
             font-size: 1.5rem;
             border: none;
+            cursor: pointer;
 
             &:hover,
             &:active {
@@ -52,24 +53,6 @@
     }
 }
 
-// .container-elements {
-//     display: flex;
-//     flex-direction: column;
-
-//     .features {
-//         margin: 5rem auto;
-//         display: flex;
-//         max-width: 120rem;
-//         gap: 30rem;
-//         // justify-content: space-between;
-//     }
-
-//     .features--el {
-//         border: 1px solid red;
-//         width: 20rem;
-//         height: 20rem;
-//     }
-// }
 
 @media only screen and (max-width:720px) {
     .container {

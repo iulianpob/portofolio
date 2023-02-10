@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content darkMode" [ngClass]="{'lightMode': lightMode === true}">
     <div class="header">
         <div class="header-text">
             <h2>A thought to take into account if you think of contacting me</h2>
@@ -28,13 +28,11 @@
                         <i class="pi pi-user"></i>
                         Iulian Pobirci</p>
                     <p class="contact contact-el el-link">
-                        <i class="pi pi-phone"></i>
-                        <a href="tel:0773328977" id="tel">0773-328-977
+                        <a href="tel:0773328977" id="tel"><i class="pi pi-phone"></i> 0773-328-977
                         </a>
                     </p>
                     <p class="contact contact-el el-link">
-                        <i class="pi pi-envelope"></i>
-                        <a href = "mailto: iulianpob@gmail.com" id="email">iulianpob@gmail.com
+                        <a href = "mailto: iulianpob@gmail.com" id="email"><i class="pi pi-envelope"></i> iulianpob@gmail.com
                         </a>
                     </p>
                     <p class="contact contact-el el-location">

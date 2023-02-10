@@ -118,6 +118,7 @@
         margin: 1rem auto !important;
         border-right: none;
         padding: 1rem !important;
+        border: none!important;
     }
     
 
@@ -131,7 +132,15 @@
     }
 
     .aside-footer {
-        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, 40%);
+
+        .aside__contol--btn {
+            background-color: transparent !important;
+            border: none !important;
+        }
     }
 
     .mobile-screen--navi {

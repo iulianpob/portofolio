@@ -33,8 +33,4 @@ onToggleAside() {
   this.showMenu = !this.showMenu
 }
 
-
- 
-
-
 }
