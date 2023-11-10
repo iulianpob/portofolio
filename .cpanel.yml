@@ -1,7 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pobdesig/repositories/portofolio
-    - /bin/cp src/index.html $DEPLOYPATH
-    - /bin/cp src/styles.css $DEPLOYPATH
-    - /bin/cp -R /src/assets $DEPLOYPATH
+    - export DEPLOYPATH=//home/pobdesig/repositories/portofolio
+    - /bin/cp -R dist/portofolio/* $DEPLOYPATH
