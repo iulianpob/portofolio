@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=//home/pobdesig/repositories/portofolio
+    - export DEPLOYPATH=/home/pobdesig/repositories/portofolio
     - /bin/cp -R dist/portofoliu/* $DEPLOYPATH
